@@ -16,19 +16,21 @@ permalink: /:year/:month/:day/:title/
 # other links
 twitter_username: joyjo1735
 facebook_username: 
-github_username: July1735
-email: chizou17356@gmail.com
-weibo_username: 尺走
-zhihu_username: 苏也
-linkedIn_username: 
-dribbble_username:
+twitter_username: JulySue1735
+#facebook_username: 
+github_username:  suesam
+email: zymb_1704@126.com
+#weibo_username: 
+#zhihu_username: 
+#linkedIn_username: 
+#dribbble_username:
 
-description_footer: 自由的记录自由者
+description_footer: 自由的记录自由者！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #hygblog
+#duoshuo_shortname: #hygblog
 disqus_shortname: jojosue
 
 # statistic analysis 统计代码
@@ -36,7 +38,7 @@ disqus_shortname: jojosue
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
 baidu_tongji_id: 8359681f737a47ca2db5b99a6b5c10b2
-google_analytics_id: UA-139749246-1 # google 分析追踪id
+google_analytics_id: UA-139749246-4 # google 分析追踪id
 
 # Build settings
 markdown: kramdown
@@ -56,5 +58,5 @@ tag_dir: tag/
 excerpt_separator: "\n\n\n\n"
 
 # paginate
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 6
