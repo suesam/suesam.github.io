@@ -198,13 +198,12 @@
 
 <h2 id="博客">博客</h2>
 <ul>
-  <li>搜索框</li>
-  <li>二维码</li>
-  <li>关于页面的链接</li>
+  <li>搜索框：借鉴码志</li>
+  <li>二维码：借鉴码志</li>
   <li>写作计划指定</li>
-  <li>样式个性化</li>
-  <li>文章一键发布到其他平台</li>
-  <li>分享</li>
+  <li>样式个性化：背景色替换</li>
+  <li>文章一键发布到其他平台：自个做</li>
+  <li>分享到其他渠道</li>
 </ul>
 
         </article>
@@ -229,29 +228,26 @@
         
 
 
-<div id="disqus_thread"></div>
-<script>
-    /**
-     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
 
-    var disqus_config = function() {
-        this.page.url = 'http://localhost:4000/2019/05/08/about-me/'; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://localhost:4000/2019/05/08/about-me/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
 
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document,
-            s = d.createElement('script');
-
-        s.src = '//joyjo1735.disqus.com/embed.js';
-
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <div id="gitalk-container"></div>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/2019/05/08/about-me/',
+            clientID: '7781baee37b6999efbb2',
+            clientSecret: 'c729ebbd701f0dbb602f53820f6be701495e1a7a',
+            repo: 'blog-comment',
+            owner: 'suesam',
+            admin: ['suesam'],
+            labels: ['blog-comment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+    
 
 
 

@@ -6,11 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
+
 title: 尺走
 brief-intro: 独立开发者的自我修养
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://suesam.github.io" # the base hostname & protocol for your site
-
+timezone: Asia/Shanghai
+encoding: "utf-8"
 permalink: /:year/:month/:day/:title/
 
 # other links
@@ -28,8 +30,19 @@ email: zymb_1704@126.com
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-#duoshuo_shortname: #hygblog
-disqus_shortname: joyjo1735
+#duoshuo_shortname: 
+#disqus_shortname: joyjo1735
+
+gitalk: 
+  enable: true #用来做启用判断可以不用
+  clientID: 7781baee37b6999efbb2 #OAuth Application
+  clientSecret: c729ebbd701f0dbb602f53820f6be701495e1a7a #OAuth Application
+  repo: blog-comment #刚创建用于gitalk Issue的仓库名称
+  owner: suesam  #github用户名
+  admin: suesam  #github用户名
+  distractionFreeMode: true # 类似于Facebook的阴影效果
+  labels: ['blog-comment']  # 用于生成Issue的标签
+  id:  # 页面唯一标示
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即

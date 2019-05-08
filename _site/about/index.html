@@ -186,30 +186,23 @@
 
 <h2 id="评论">评论</h2>
 
-<div id="disqus_thread"></div>
-<script>
-    /**
-     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-
-    var disqus_config = function() {
-        this.page.url = 'http://localhost:4000/about/'; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://localhost:4000/about/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document,
-            s = d.createElement('script');
-
-        s.src = '//joyjo1735.disqus.com/embed.js';
-
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &lt;link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"&gt;
+    &lt;script src="https://unpkg.com/gitalk/dist/gitalk.min.js"&gt;&lt;/script&gt;
+    &lt;div id="gitalk-container"&gt;&lt;/div&gt;
+    &lt;script&gt;
+    var gitalk = new Gitalk({
+        id: '/about/',
+        clientID: '7781baee37b6999efbb2',
+        clientSecret: 'c729ebbd701f0dbb602f53820f6be701495e1a7a',
+        repo: 'blog-comment',
+        owner: 'suesam',
+        admin: ['suesam'],
+        labels: ['blog-comment'],
+        perPage: 50,
+    })
+    gitalk.render('gitalk-container')
+    &lt;/script&gt;
+</code></pre></div></div>
 
 
     </div>
